@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.StateCityActivity"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/login_square"
+            >
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:hint="@string/search_state"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_search_icon"/>
+        </LinearLayout>
+
+        <ExpandableListView
+            android:layout_below="@+id/searchLayout"
+            android:fadeScrollbars="false"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:childDivider="@color/light_grey"
+            android:divider="#FAFAFA"
+            android:dividerHeight="8dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none" />
+        <ProgressBar
+            android:id="@+id/pbState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme.WhiteAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

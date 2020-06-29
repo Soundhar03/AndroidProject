@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FirebaseAuthApp</string>
+    <string name="country_list">Country List</string>
+    <string name="state_city_list">State and Cities</string>
+    <string name="weather_details">Weather Report</string>
+    <string name="clouds">Clouds :</string>
+    <string name="temperature">Temperature</string>
+    <string name="min_temp">Min temp :</string>
+    <string name="max_temp">Max temp :</string>
+    <string name="pressure">Pressure :</string>
+    <string name="humidity">Humidity :</string>
+    <string name="wind">Wind</string>
+    <string name="speed">Speed :</string>
+    <string name="degree">Degree :</string>
+    <string name="user_name">Email Address</string>
+    <string name="enter_username">Enter Email Address</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Welcome to Login</string>
+    <string name="search_country">Search Country</string>
+    <string name="search_state">Search State</string>
+    <string name="fill_error_msg">Please fill Email Addess and password</string>
+</resources>
